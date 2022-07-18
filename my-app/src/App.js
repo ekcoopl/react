@@ -1,18 +1,19 @@
-import React, {useState, useEffect } from "react";
-import Counter from "./components/Counter"
+import React, { useState, useEffect } from "react";
+import Counter from "./components/Counter";
+import "./styles/App.css";
+import PostItem from "./components/PostItem";
 
 function App() {
-  const [likes, setLikes] = useState(5)
-  
-  
+  const [likes, setLikes] = useState(5);
 
   return (
     <div className="App">
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
     </div>
   );
 }
