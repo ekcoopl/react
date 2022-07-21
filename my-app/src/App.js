@@ -1,21 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Counter from "./components/Counter";
-import "./styles/App.css";
-import PostItem from "./components/PostItem";
+import React from "react";
+import Header from "./components/Header";
 
-function App() {
-  const [likes, setLikes] = useState(5);
-
+const App = () => {
+ 
   return (
     <div className="App">
-      <PostItem/>
-      <PostItem/>
-      <PostItem/>
-      <PostItem/>
-      <PostItem/>
-      <PostItem/>
+    <Header/>
     </div>
   );
 }
 
 export default App;
+
